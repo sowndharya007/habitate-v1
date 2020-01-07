@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="DropDown" width="15" height="9" viewBox="0 0 15 9">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:none;stroke:#3b3b3b}.cls-2{clip-path:url(#clip-path)}.cls-3{stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Rectangle_74" d="M0 0h15v9H0z" class="cls-1" data-name="Rectangle 74"/>
+        </clipPath>
+    </defs>
+    <g id="DropDown-2" class="cls-2" data-name="DropDown">
+        <g id="Group_7336" data-name="Group 7336" transform="translate(3.921 -6.6)">
+            <g id="Group_11" data-name="Group 11" transform="rotate(-90 6.37 6.37)">
+                <path id="Path_27" d="M3.739 0L0 3.739l3.739 3.74" class="cls-3" data-name="Path 27"/>
+            </g>
+            <g id="Group_7335" data-name="Group 7335" transform="rotate(-90 1.87 1.87)">
+                <path id="Path_27-2" d="M3.739 0L0 3.739l3.739 3.74" class="cls-3" data-name="Path 27"/>
+            </g>
+        </g>
+    </g>
+</svg>

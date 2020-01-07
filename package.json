@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "bulma": "^0.8.0",
     "quasar": "^1.0.0"
   },
   "devDependencies": {

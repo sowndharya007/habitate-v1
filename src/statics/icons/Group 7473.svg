@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Group_7473" width="24" height="24" data-name="Group 7473" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:#3b3b3b}.cls-2{fill:#07ac00;stroke:#fff;stroke-width:2px}.cls-3{stroke:none}.cls-4{fill:none}
+        </style>
+    </defs>
+    <path id="Path_10134" d="M18.921 17.168a9.77 9.77 0 0 0-4.587-6.239 6.445 6.445 0 0 0 1.737-4.381 6.591 6.591 0 0 0-13.183 0 6.445 6.445 0 0 0 1.737 4.381 9.661 9.661 0 0 0-4.587 6.239 2.315 2.315 0 0 0 .445 1.947A2.283 2.283 0 0 0 2.31 20h14.3a2.283 2.283 0 0 0 1.826-.885 2.074 2.074 0 0 0 .485-1.947zM9.48 1.5a5 5 0 1 1-5.033 5.049A5.011 5.011 0 0 1 9.48 1.5zm7.794 16.681a.95.95 0 0 1-.668.31H2.354a.95.95 0 0 1-.668-.31.914.914 0 0 1-.178-.664 8.079 8.079 0 0 1 4.32-5.487 6.658 6.658 0 0 0 7.215 0 8.273 8.273 0 0 1 4.32 5.487.644.644 0 0 1-.089.669z" class="cls-1" data-name="Path 10134" transform="translate(.011)"/>
+    <g id="Ellipse_1032" class="cls-2" data-name="Ellipse 1032" transform="translate(13 13)">
+        <circle cx="5.5" cy="5.5" r="5.5" class="cls-3"/>
+        <circle cx="5.5" cy="5.5" r="4.5" class="cls-4"/>
+    </g>
+</svg>

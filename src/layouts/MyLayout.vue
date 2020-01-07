@@ -1,102 +1,112 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          icon="menu"
-          aria-label="Menu"
-        />
+    <q-layout>
+      <q-header elevated class="bg-white text-grey-7">
+         <div class ="row">
+           <q-toolbar>
+           <div class="col">
+                       <img alt="logo" src="../assets/logo.svg" style="padding-left:2%; padding-right:2%"/>
+           </div>
+           <div class="col">
+               <q-btn stretch flat  icon="img:statics/icons/Union 17.svg"/>Recent
+           </div>
+           <div class="is-divider-vertical" data-content="OR"></div>
+           <div class="col">
+         <q-btn stretch flat icon="img:statics/icons/Path 10142.svg"/>Trending
+           </div>
+           <div class="col">
+         <q-btn stretch flat  icon="img:statics/icons/Asset13.svg"/>Pulse Poll
+           </div>
+           <div class="col">
+         <q-btn unelevated rounded color="primary" label="Add Post" />
+         <q-btn flat round  icon="img:statics/icons/Asset9.svg" />
+         <q-btn flat round  icon="img:statics/icons/Asset8.svg" />
+         <q-btn flat round icon="img:statics/icons/Asset23.svg" style="width: auto !important" />
+           </div>
+         </q-toolbar>
+        </div>
+         </q-header>
+      <q-drawer
+        v-model="drawer"
+        show-if-above
 
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
+        :mini="miniState"
+        @mouseover="miniState = false"
+        @mouseout="miniState = true"
+        mini-to-overlay
+        :height="80"
+        :width="200"
+        :breakpoint="500"
+        bordered
+        content-class="bg-white"
+        class="text-grey-7"
+      >
+        <q-scroll-area class="fit">
+          <q-list padding>
+            <q-item active clickable>
+              <q-item-section avatar>
+          <img src="../assets/discussion.svg" />
+              </q-item-section>
+              <q-item-section>
+                Discussion
+              </q-item-section>
+            </q-item>
+            <q-separator />
+            <q-item clickable >
+              <q-item-section avatar>
+          <img src="../assets/approval.svg" />
+              </q-item-section>
+              <q-item-section>
+                For Approval
+            </q-item-section>
+            </q-item>
+            <q-separator />
+            <q-item clickable >
+              <q-item-section avatar>
+          <img src="../assets/reported.svg" />
+              </q-item-section>
 
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
-    </q-header>
+              <q-item-section>
+                Reported Posts
+              </q-item-section>
+            </q-item>
+             <q-separator />
+            <q-item clickable>
+              <q-item-section avatar>
+          <img src="../assets/members.svg" />
+              </q-item-section>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      content-class="bg-grey-2"
-    >
-      <q-list>
-        <q-item-label header>Essential Links</q-item-label>
-        <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="school" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Docs</q-item-label>
-            <q-item-label caption>quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://github.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="code" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Github</q-item-label>
-            <q-item-label caption>github.com/quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://chat.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="chat" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Discord Chat Channel</q-item-label>
-            <q-item-label caption>chat.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://forum.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="record_voice_over" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Forum</q-item-label>
-            <q-item-label caption>forum.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://twitter.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="rss_feed" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Twitter</q-item-label>
-            <q-item-label caption>@quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://facebook.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="public" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Facebook</q-item-label>
-            <q-item-label caption>@QuasarFramework</q-item-label>
-          </q-item-section>
-        </q-item>
-      </q-list>
-    </q-drawer>
+              <q-item-section>
+                Members
+              </q-item-section>
+            </q-item>
+             <q-separator />
+            <q-item clickable>
+              <q-item-section avatar>
+          <img src="../assets/Group 8150.svg"/>
+              </q-item-section>
 
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-  </q-layout>
+              <q-item-section>
+                Apps
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </q-scroll-area>
+      </q-drawer>
+
+      <q-page-container>
+        <q-page padding>
+          <p v-for="n in 15" :key="n">
+          </p>
+        </q-page>
+      </q-page-container>
+    </q-layout>
 </template>
-
 <script>
 export default {
-  name: 'MyLayout',
-
   data () {
     return {
-      leftDrawerOpen: false
+      drawer: false,
+      miniState: true
     }
   }
 }
