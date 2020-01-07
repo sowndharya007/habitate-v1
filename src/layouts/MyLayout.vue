@@ -4,7 +4,7 @@
          <div class ="row">
            <q-toolbar>
            <div class="col q-pl-md">
-                       <img alt="logo" src="../assets/Logo.svg" />
+             <img alt="logo" src="https://cdn.zeplin.io/5e131414d527b90e8289ff59/assets/36FB8F84-59EA-4D6F-870C-166826FD5B85.svg" />
            </div>
            <div class="col">
                <q-btn stretch flat  icon="img:statics/icons/alarm.svg"/>Recent
@@ -49,18 +49,20 @@
                 Discussion
                 <q-list>
                   <q-item clickable v-close-popup @click="onItemClick">
-                     <q-icon  name="img:statics/icons/sort.svg" />
+                     <q-icon class="q-mr-md"  name="img:statics/icons/sort.svg" />
                      <q-item-label >General</q-item-label>
                   </q-item>
                   <q-item clickable v-close-popup @click="onItemClick">
-                     <q-icon  name="img:statics/icons/sort.svg" /> <q-item-label>Announcement</q-item-label>
+                     <q-icon  class="q-mr-md"  name="img:statics/icons/sort.svg" /> <q-item-label>Announcement</q-item-label>
                     </q-item>
                   <q-item clickable v-close-popup @click="onItemClick">
                      <q-icon  class="q-mr-md" name="img:statics/icons/sort.svg" /> <q-item-label>Random</q-item-label>
                   </q-item>
+                   <q-item clickable v-close-popup @click="onItemClick">
+                     <q-icon class="q-mr-md"  name="img:statics/icons/plus.svg" /> <q-item-label>Add Channel</q-item-label>
+                    </q-item>
                 </q-list>
               </q-item-section>
-
     </q-item>
             <q-separator />
             <q-item clickable >

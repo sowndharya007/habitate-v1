@@ -1,7 +1,7 @@
 <template>
     <q-modal v-model="opened">
-    <h4>Discussion</h4>
-        <h1>General</h1>
+<h4 class="subtitle is-5">Discussion</h4>
+<h1 class="title is-1">General</h1>
         </q-modal>
     <!-- <div class="q-gutter-md">
 
