@@ -3,32 +3,31 @@
       <q-header elevated class="bg-white text-grey-7">
          <div class ="row">
            <q-toolbar>
-           <div class="col">
-                       <img alt="logo" src="../assets/logo.svg" style="padding-left:2%; padding-right:2%"/>
+           <div class="col q-pl-md">
+                       <img alt="logo" src="../assets/Logo.svg" />
            </div>
            <div class="col">
-               <q-btn stretch flat  icon="img:statics/icons/Union 17.svg"/>Recent
+               <q-btn stretch flat  icon="img:statics/icons/alarm.svg"/>Recent
            </div>
            <div class="is-divider-vertical" data-content="OR"></div>
            <div class="col">
-         <q-btn stretch flat icon="img:statics/icons/Path 10142.svg"/>Trending
+         <q-btn stretch flat icon="img:statics/icons/star.svg"/>Trending
            </div>
            <div class="col">
-         <q-btn stretch flat  icon="img:statics/icons/Asset13.svg"/>Pulse Poll
+         <q-btn stretch flat  icon="img:statics/icons/signal.svg"/>Pulse Poll
            </div>
-           <div class="col">
-         <q-btn unelevated rounded color="primary" label="Add Post" />
-         <q-btn flat round  icon="img:statics/icons/Asset9.svg" />
-         <q-btn flat round  icon="img:statics/icons/Asset8.svg" />
-         <q-btn flat round icon="img:statics/icons/Asset23.svg" style="width: auto !important" />
-           </div>
+                     <div class="col q-pa-md">
+         <q-btn unelevated rounded color="primary" class="q-mr-md" label="Add Post" />
+         <q-btn flat round  class="q-mr-md" icon="img:statics/icons/search.svg" />
+         <q-btn flat round  class="q-mr-md" icon="img:statics/icons/notification.svg" />
+         <q-btn flat round  class="q-mr-md" icon="img:statics/icons/user-dropdown.svg" style="width: auto" />
+        </div>
          </q-toolbar>
         </div>
          </q-header>
       <q-drawer
         v-model="drawer"
         show-if-above
-
         :mini="miniState"
         @mouseover="miniState = false"
         @mouseout="miniState = true"
@@ -41,15 +40,28 @@
         class="text-grey-7"
       >
         <q-scroll-area class="fit">
-          <q-list padding>
-            <q-item active clickable>
+          <q-list>
+             <q-item clickable >
               <q-item-section avatar>
-          <img src="../assets/discussion.svg" />
+               <q-icon  name="img:statics/assets/discussion.svg" />
               </q-item-section>
-              <q-item-section>
+              <q-item-section >
                 Discussion
+                <q-list>
+                  <q-item clickable v-close-popup @click="onItemClick">
+                     <q-icon  name="img:statics/icons/sort.svg" />
+                     <q-item-label >General</q-item-label>
+                  </q-item>
+                  <q-item clickable v-close-popup @click="onItemClick">
+                     <q-icon  name="img:statics/icons/sort.svg" /> <q-item-label>Announcement</q-item-label>
+                    </q-item>
+                  <q-item clickable v-close-popup @click="onItemClick">
+                     <q-icon  class="q-mr-md" name="img:statics/icons/sort.svg" /> <q-item-label>Random</q-item-label>
+                  </q-item>
+                </q-list>
               </q-item-section>
-            </q-item>
+
+    </q-item>
             <q-separator />
             <q-item clickable >
               <q-item-section avatar>
@@ -82,9 +94,8 @@
              <q-separator />
             <q-item clickable>
               <q-item-section avatar>
-          <img src="../assets/Group 8150.svg"/>
+          <img src="../assets/members.svg"/>
               </q-item-section>
-
               <q-item-section>
                 Apps
               </q-item-section>
@@ -95,14 +106,20 @@
 
       <q-page-container>
         <q-page padding>
-          <p v-for="n in 15" :key="n">
-          </p>
+          <div id="app">
+  <Panel>
+      <General></General>
+  </Panel></div>
         </q-page>
       </q-page-container>
     </q-layout>
 </template>
 <script>
+import General from '../components/general.vue'
 export default {
+  components: {
+    General
+  },
   data () {
     return {
       drawer: false,

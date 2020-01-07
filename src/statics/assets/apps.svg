@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <style>
+            .cls-1{fill:#3b3b3b}.cls-2{clip-path:url(#clip-path)}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Rectangle_1754" d="M0 0h60v60H0z" class="cls-1" data-name="Rectangle 1754" transform="translate(269.5)"/>
+        </clipPath>
+    </defs>
+    <g id="Asset4" transform="translate(-269.5)">
+        <g id="Group_8247" class="cls-2" data-name="Group 8247">
+            <path id="Path_11830" d="M293.8 9.5h-10.9a3.9 3.9 0 0 0-3.9 3.9v10.9a3.9 3.9 0 0 0 3.9 3.9h10.9a3.9 3.9 0 0 0 3.9-3.9V13.4a3.97 3.97 0 0 0-3.9-3.9zm.4 14.7a.43.43 0 0 1-.4.4h-10.9a.43.43 0 0 1-.4-.4V13.4a.43.43 0 0 1 .4-.4h10.9a.43.43 0 0 1 .4.4z" class="cls-1" data-name="Path 11830"/>
+            <path id="Path_11831" d="M316.2 9.5h-10.9a3.9 3.9 0 0 0-3.9 3.9v10.9a3.9 3.9 0 0 0 3.9 3.9h10.9a3.9 3.9 0 0 0 3.9-3.9V13.4a3.97 3.97 0 0 0-3.9-3.9zm.4 14.7a.43.43 0 0 1-.4.4h-10.9a.43.43 0 0 1-.4-.4V13.4a.43.43 0 0 1 .4-.4h10.9a.43.43 0 0 1 .4.4z" class="cls-1" data-name="Path 11831"/>
+            <path id="Path_11832" d="M293.8 31.9h-10.9a3.9 3.9 0 0 0-3.9 3.9v10.9a3.9 3.9 0 0 0 3.9 3.9h10.9a3.9 3.9 0 0 0 3.9-3.9V35.8a3.97 3.97 0 0 0-3.9-3.9zm.4 14.7a.43.43 0 0 1-.4.4h-10.9a.43.43 0 0 1-.4-.4V35.8a.43.43 0 0 1 .4-.4h10.9a.43.43 0 0 1 .4.4z" class="cls-1" data-name="Path 11832"/>
+            <path id="Path_11833" d="M316.2 31.9h-10.9a3.9 3.9 0 0 0-3.9 3.9v10.9a3.9 3.9 0 0 0 3.9 3.9h10.9a3.9 3.9 0 0 0 3.9-3.9V35.8a3.97 3.97 0 0 0-3.9-3.9zm.4 14.7a.43.43 0 0 1-.4.4h-10.9a.43.43 0 0 1-.4-.4V35.8a.43.43 0 0 1 .4-.4h10.9a.43.43 0 0 1 .4.4z" class="cls-1" data-name="Path 11833"/>
+        </g>
+    </g>
+</svg>
